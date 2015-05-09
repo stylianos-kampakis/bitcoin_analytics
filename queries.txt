@@ -1,0 +1,11 @@
+CREATE table data(
+
+exchange char(50) NOT NULL,
+bid float,
+ask float,
+volume float,
+datenow date NOT NULL,
+timenow time NOT NULL,
+ADD INDEX (exchange,datenow,timenow)
+
+);
